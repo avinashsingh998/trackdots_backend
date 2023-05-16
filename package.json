@@ -1,0 +1,27 @@
+{
+  "name": "trackdots_backend",
+  "version": "16.0.2",
+  "description": "This is the backend of the main project named trackdots, which is a application for providing support for tourists",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avinashsingh998/trackdots_backend.git"
+  },
+  "keywords": [
+    "Tour",
+    "travel",
+    "location",
+    "map",
+    "explore"
+  ],
+  "author": "Avinash Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avinashsingh998/trackdots_backend/issues"
+  },
+  "homepage": "https://github.com/avinashsingh998/trackdots_backend#readme"
+}
