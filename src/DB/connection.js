@@ -1,10 +1,11 @@
-// connection.js (database connection)
+require('dotenv').config();
 const mongoose = require('mongoose');
 
 // Establish the database connection
 async function connectToDatabase() {
   try {
-    await mongoose.connect('mongodb://localhost:27017/trackdots', {
+    console.log(process.env.MongoUrl)
+    await mongoose.connect(process.env.MongoUrl , {
       useNewUrlParser: true,
       useUnifiedTopology: true
     });

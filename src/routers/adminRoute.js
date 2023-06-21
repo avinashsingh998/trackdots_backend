@@ -4,10 +4,10 @@ const cors = require('cors');
 const fs = require('fs');
 const { getAllBookings } = require('../controllers/bookings');
 const { verifyAdmin, loginAdmin } = require('../auth/adminAuth');
+const { verifyAdminController } = require('../controllers/admin');
+const { getAllFeedbacks, markAsRead } = require('../controllers/feedback');
+const { getAllTickets, updateTicket } = require('../controllers/ticket');
 
-require('dotenv').config();
-
-const secretKey = process.env.KEY;
 
 const router = express.Router();
 
@@ -15,10 +15,14 @@ router.use(cors())
 
 router.post('/login', loginAdmin);
 
-router.post('/verify', verifyAdmin);
+router.get('/verify', verifyAdminController);
 
 
-router.get('/bookings',  getAllBookings)
+router.get('/bookings', verifyAdmin, getAllBookings)
+
+router.get('/feedback',verifyAdmin, getAllFeedbacks).get('/feedbackUpdate', verifyAdmin, markAsRead)
+
+router.get('/tickets', verifyAdmin, getAllTickets).put('/tickets', verifyAdmin, updateTicket)
 
 
 
