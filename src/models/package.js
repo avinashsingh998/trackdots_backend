@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 const packageSchema = new mongoose.Schema({
   _id: {
@@ -33,8 +33,8 @@ const packageSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-});
+})
 
-const Package = mongoose.model('Package', packageSchema);
+const Package = mongoose.model('Package', packageSchema)
 
-module.exports = Package;
+module.exports = Package

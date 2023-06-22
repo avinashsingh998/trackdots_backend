@@ -1,16 +1,10 @@
-const { RunCommandCursor } = require("mongodb");
 const Ticket = require("../models/ticket")
 
 
 async function addTicket(req, res){
     try{
         const ticket = new Ticket(req.body.contactForm)
-
-        // console.log("this is ticket 1 ", ticket)
-        // console.log(contactForm)
-
-        const result = await ticket.save();
-
+        const result = await ticket.save()
         res.status(201).json(result)
     }
 
@@ -23,7 +17,7 @@ async function addTicket(req, res){
 
 async function getAllTickets(req, res){
     try{
-        const tickets = await Ticket.find();
+        const tickets = await Ticket.find()
         res.status(200).json(tickets)
     }
     catch(err){

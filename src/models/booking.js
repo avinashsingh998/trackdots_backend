@@ -1,5 +1,5 @@
 // booking.js (model)
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 // Define the Booking schema
 const bookingSchema = new mongoose.Schema({
@@ -27,7 +27,7 @@ const bookingSchema = new mongoose.Schema({
     type: String,
     default: ""
   }
-});
+})
 
 // Create and export the Booking model
-module.exports = mongoose.model('Booking', bookingSchema);
+module.exports = mongoose.model('Booking', bookingSchema)

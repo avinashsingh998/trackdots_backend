@@ -2,7 +2,7 @@ const Package = require("../models/package")
 
 
 async function getAllPackages(req, res){
-    console.log(req.cookies)    
+    // console.log(req.cookies)    
     try{
         let bookings = await Package.find();
         // console.log(bookings)

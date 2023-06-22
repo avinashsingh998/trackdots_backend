@@ -39,11 +39,11 @@ async function verifyAdmin(req, res, next){
 async function loginAdmin(req, res){
 
     const {id, password} = req.body;
-    console.log(id, "  ", password)  
+    // console.log(id, "  ", password)  
 
    try{
     const admin = await user.findOne({_id:id, password:password, role:"admin"})
-    console.log(admin)
+    // console.log(admin)
        
   
 

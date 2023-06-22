@@ -4,7 +4,7 @@ async function addFeedback(req, res) {
   try {
     const { name, subject, description, user_Id } = req.body;
 
-    console.log({ name, subject, description, user_Id });
+    // console.log({ name, subject, description, user_Id });
 
     if (!name || !subject || !description) {
       res.status(400).json({ message: "All input fields are required" });
@@ -17,7 +17,7 @@ async function addFeedback(req, res) {
       });
 
       const result = await feedback.save();
-      console.log(result);
+      // console.log(result);
       res.status(201).json(result);
     }
   } catch (err) {
@@ -42,7 +42,7 @@ async function getAllFeedbacks(req, res) {
 async function markAsRead(req, res) {
   try {
     const id = req.query.id;
-    console.log("this is the id : ", id);
+    // console.log("this is the id : ", id);
     Feedback.findByIdAndUpdate()
     const obj = await Feedback.findByIdAndUpdate(id, { read: true }, { new: true });
     if (obj) res.status(200).json(obj);

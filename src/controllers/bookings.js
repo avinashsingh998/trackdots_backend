@@ -1,7 +1,7 @@
 const booking = require("../models/booking")
 
 
-getAllBookings = async (req, res)=>{
+async function getAllBookings (req, res){
     try{
         let bookings = await booking.find();
         // console.log(bookings)
