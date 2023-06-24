@@ -30,9 +30,9 @@ async function verifyAdminController(req, res, next){
       {
         // console.log(decoded);
         const user = await User.findOne({email:decoded.email, name:decoded.name, role:decoded.role})
-        // console.log(user,'this is user')
-        // console.log({"user":{"name":user.name, "email":user.email, imageUrl:user.imageUrl}})
-        res.status(200).json({"user":{"name":user.name, "email":user.email, imageUrl:user.imageUrl}})
+        if(user.role=='admin')
+          res.status(200).json({"user":{"name":user.name, "email":user.email, imageUrl:user.imageUrl}})
+          
       }
       // res.status(200).json({user:decoded})
     } catch (error) {

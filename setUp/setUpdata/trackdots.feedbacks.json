@@ -1,0 +1,127 @@
+[{
+  
+  "name": "Avinash singh",
+  "subject": "customer_service",
+  "description": "It could be improved by providing more customer support",
+  "read": false,
+  "__v": 0
+},
+{
+  
+  "name": "Rohit Sharma",
+  "subject": "communication",
+  "description": "I was unable to understand the local language. It would be better if the guide explains in both languages.",
+  "read": false
+},
+{
+  
+  "name": "John Smith",
+  "subject": "overall_experience",
+  "description": "The overall experience was amazing. I enjoyed every moment of the tour.",
+  "read": false
+},
+{
+  
+  "name": "Emily Johnson",
+  "subject": "destination_selection",
+  "description": "The selection of destinations was fantastic. Each place we visited had its own unique charm.",
+  "read": false
+},
+{
+  
+  "name": "Jessica Davis",
+  "subject": "tour_guides",
+  "description": "The tour guides were very knowledgeable and made the experience more enjoyable with their insights.",
+  "read": false
+},
+{
+  
+  "name": "Michael Brown",
+  "subject": "accommodation",
+  "description": "The accommodations provided during the tour were comfortable and met our expectations.",
+  "read": false
+},
+{
+  
+  "name": "Sophia Wilson",
+  "subject": "transportation",
+  "description": "The transportation arrangements were well-organized and we had a smooth journey throughout the tour.",
+  "read": false
+},
+{
+  
+  "name": "Daniel Thompson",
+  "subject": "itinerary",
+  "description": "The itinerary was well-planned and allowed us to cover all the major attractions within the given time.",
+  "read": false
+},
+{
+  
+  "name": "Olivia Martinez",
+  "subject": "customer_service",
+  "description": "The customer service team was responsive and helpful in addressing our queries and concerns.",
+  "read": false
+},
+{
+  
+  "name": "William Anderson",
+  "subject": "value_for_money",
+  "description": "The tour provided great value for money. The overall cost was reasonable considering the experiences and services provided.",
+  "read": true
+},
+{
+  
+  "name": "Sophie Thompson",
+  "subject": "safety_security",
+  "description": "I felt safe and secure throughout the tour. The necessary precautions were taken to ensure the well-being of the participants.",
+  "read": false
+},
+{
+  
+  "name": "David Wilson",
+  "subject": "tour_activities",
+  "description": "The tour activities were diverse and engaging. There was something for everyone, and it added to the overall enjoyment of the tour.",
+  "read": false
+},
+{
+  
+  "name": "Emma Harris",
+  "subject": "communication",
+  "description": "The communication from the tour organizer was clear and timely. Any updates or changes were promptly communicated to the participants.",
+  "read": false
+},
+{
+  
+  "name": "Liam Johnson",
+  "subject": "booking_process",
+  "description": "The booking process was smooth and hassle-free. The instructions for booking were clear, and any queries were promptly addressed by the support team.",
+  "read": false
+},
+{
+  
+  "name": "Oliver Smith",
+  "subject": "other",
+  "description": "I have another issue that is not covered in the available subjects. Please contact me to discuss further.",
+  "read": false
+},
+{
+  
+  "name": "Emma Harris",
+  "subject": "communication",
+  "description": "The communication from the tour organizer was clear and timely. Any updates or changes were promptly communicated to the participants.",
+  "read": false
+},
+{
+  
+  "name": "Liam Johnson",
+  "subject": "booking_process",
+  "description": "The booking process was smooth and hassle-free. The instructions for booking were clear, and any queries were promptly addressed by the support team.",
+  "read": false
+},
+{
+  
+  "name": "Oliver Smith",
+  "subject": "other",
+  "description": "I have another issue that is not covered in the available subjects. Please contact me to discuss further.",
+  "read": false
+}]

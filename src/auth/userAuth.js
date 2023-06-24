@@ -5,11 +5,10 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
 
-async function verifyAdmin(req, res, next){
+async function verifyUser(req, res, next){
 
         try {
           const authHeader = req.headers.authorization;
-
           if (!authHeader || !authHeader.startsWith('Bearer ')) {
             return res.status(401).json({ message: 'Authorization header missing or invalid' });
           }
@@ -19,16 +18,17 @@ async function verifyAdmin(req, res, next){
           const currentTimestamp = Math.floor(Date.now() / 1000);
       
           // Check if the token has expired
-          if (decoded.exp < currentTimestamp ) {
+          if (decoded.exp < currentTimestamp) {
             console.log('Token has expired');
             res.status(401).json({"message":"token is expired", "user":decoded})
-          }else if(decoded.role != 'admin'){
+          }else if(decoded.role != 'user'){
             console.log('You don\'t have access to this page');
             res.status(401).json({"message":"You don\'t have access to this page", "user":decoded})  
           }
-         else if(decoded  && decoded.role == 'admin')
+         else if(decoded && decoded.role == 'user')
           {
-            // console.log(decoded);
+            const currentUser = await user.findOne({email:decoded.email, role:'user'})
+            req.body.user = currentUser
             next();
           }
           // res.status(200).json({user:decoded})
@@ -39,30 +39,28 @@ async function verifyAdmin(req, res, next){
 
 }
 
-async function loginAdmin(req, res){
+async function loginUser(req, res){
 
     const {id, password} = req.body;
-    // console.log(id, "  ", password)  
+    console.log(id, "  ", password, req.body)  
 
    try{
-    const admin = await user.findOne({_id:id, password:password, role:"admin"}) 
-    // console.log(admin)
+    const userObj = await user.findOne({_id:id, password:password, role:"user"})
+    console.log(userObj)
        
-  
-
-   if(admin){
+   if(userObj){
     const payload = {
-        email:admin.email,
-        name:admin.name,
-        role:admin.role,
+        email:userObj.email,
+        name:userObj.name,
+        role:userObj.role,
         iat: Math.floor(Date.now() / 1000), // Issued at time (current time in seconds)
         exp: Math.floor(Date.now() / 1000) + (10 * 60) // Expiration time (current time + 10 minutes in seconds)
       };
 
       const user = {
-        name:admin.name,
-        email:admin.email,
-        imageUrl:admin.imageUrl
+        name:userObj.name,
+        email:userObj.email,
+        imageUrl:userObj.imageUrl
       }
       // console.log(payload)
 
@@ -71,7 +69,7 @@ async function loginAdmin(req, res){
    }
 
    else{
-    res.status(401).json({"message":"You are not an authorized person"})
+    res.status(401).json({"message":"You are not an authenticated person"})
    }
    }
    catch(err){
@@ -89,4 +87,4 @@ async function loginAdmin(req, res){
 
 
 
-module.exports = {verifyAdmin, loginAdmin};
+module.exports = {verifyUser, loginUser};

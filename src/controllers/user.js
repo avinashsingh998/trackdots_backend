@@ -2,6 +2,11 @@ const TempUser = require("../models/tempUser");
 const User = require("../models/user");
 const { generateOTP } = require("../services/mail");
 
+
+
+
+//Generate the OTP for verification, and storiing the user data temporarily
+
 async function validateNewUser(req, res) {
   try {
     const formdata = await req.body.newUserData;
@@ -19,6 +24,10 @@ async function validateNewUser(req, res) {
     console.log(err);
   }
 }
+
+
+
+//verifying the previously and creating the new user after varification
 
 async function addNewUser(req, res) {
   try {

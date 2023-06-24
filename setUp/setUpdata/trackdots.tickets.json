@@ -1,0 +1,150 @@
+[{
+ 
+  "name": "Rishabh Attri",
+  "contactNumber": "9823112354",
+  "emailId": "rishabh.attri@netsmartz.com",
+  "subject": "Tourist spot not mentioned",
+  "description": "I have visited Kasauli Hills last week. It is really a wonderful place for tourists. But this place is not mentioned in your tourist spots.",
+  "closed": false,
+  "comment": ""
+},
+{
+ 
+  "name": "Aarav Patel",
+  "contactNumber": "9876543210",
+  "emailId": "aarav.patel@example.com",
+  "subject": "Lack of transportation facilities",
+  "description": "I faced difficulties in finding suitable transportation options in some remote areas. It would be helpful if you can improve the transportation facilities.",
+  "closed": false,
+  "comment": ""
+},
+{
+ 
+  "name": "Isha Gupta",
+  "contactNumber": "9898989898",
+  "emailId": "isha.gupta@example.com",
+  "subject": "Language barrier with tour guides",
+  "description": "The tour guides at some tourist attractions were not fluent in English, making it challenging to understand the historical significance of the places. Please consider providing guides who can communicate effectively.",
+  "closed": false,
+  "comment": ""
+},
+{
+ 
+  "name": "Advait Kumar",
+  "contactNumber": "9876543210",
+  "emailId": "advait.kumar@example.com",
+  "subject": "Difficulty in booking process",
+  "description": "I faced issues while trying to book a tour package through your website. The process was confusing and I encountered errors during payment. Please ensure a smoother booking experience.",
+  "closed": false,
+  "comment": ""
+},
+{
+ 
+  "name": "Ananya Sharma",
+  "contactNumber": "9898989898",
+  "emailId": "ananya.sharma@example.com",
+  "subject": "Lack of cleanliness at tourist sites",
+  "description": "I noticed litter and unclean surroundings at some popular tourist sites. It's essential to maintain cleanliness to enhance the overall visitor experience. Please address this issue.",
+  "closed": false,
+  "comment": ""
+},
+{
+ 
+  "name": "Anushka Patel",
+  "contactNumber": "9876543210",
+  "emailId": "anushka.patel@example.com",
+  "subject": "Insufficient tour activities",
+  "description": "The tour activities provided were limited and not very engaging. It would be great to have a wider range of activities to choose from to make the tour more exciting.",
+  "closed": false,
+  "comment": ""
+},
+{
+ 
+  "name": "Arjun Singh",
+  "contactNumber": "9898989898",
+  "emailId": "arjun.singh@example.com",
+  "subject": "Inadequate value for money",
+  "description": "Considering the cost of the tour package, the overall value for money was not satisfactory. It would be better to improve the quality and variety of services provided.",
+  "closed": false,
+  "comment": ""
+},
+{
+ 
+  "name": "Neha Desai",
+  "contactNumber": "9876543210",
+  "emailId": "neha.desai@example.com",
+  "subject": "Unsatisfactory customer service",
+  "description": "I had a poor experience with the customer service team. They were unresponsive and unhelpful in resolving my queries and concerns. Please improve the customer support services.",
+  "closed": false,
+  "comment": ""
+},
+{
+ 
+  "name": "Rohan Gupta",
+  "contactNumber": "9898989898",
+  "emailId": "rohan.gupta@example.com",
+  "subject": "Safety and security concerns",
+  "description": "I noticed a lack of proper safety measures at some tourist sites. It's crucial to prioritize the safety and security of visitors. Please address this issue to ensure a safe experience for everyone.",
+  "closed": false,
+  "comment": ""
+},
+{
+ 
+  "name": "Kavya Verma",
+  "contactNumber": "9876543210",
+  "emailId": "kavya.verma@example.com",
+  "subject": "Inconvenient itinerary",
+  "description": "The itinerary provided had long travel durations and insufficient time at certain destinations. It would be better to optimize the itinerary for a more balanced and enjoyable experience.",
+  "closed": false,
+  "comment": ""
+},
+{
+ 
+  "name": "Aditya Kapoor",
+  "contactNumber": "9898989898",
+  "emailId": "aditya.kapoor@example.com",
+  "subject": "Difficulty in communication",
+  "description": "I faced challenges in communicating with the local people due to the language barrier. It would be helpful to provide language assistance or guides who can bridge this communication gap.",
+  "closed": true,
+  "comment": "resolved"
+},
+{
+ 
+  "name": "Aarav Sharma",
+  "contactNumber": "9876543210",
+  "emailId": "aarav.sharma@example.com",
+  "subject": "Unsatisfactory accommodation",
+  "description": "The accommodation provided during the tour was below expectations. The rooms were not clean and lacked basic amenities. Please improve the quality of accommodation services.",
+  "closed": true,
+  "comment": "Issue resolved by Avinash Singh"
+},
+{
+ 
+  "name": "Ishaan Gupta",
+  "contactNumber": "9898989898",
+  "emailId": "ishaan.gupta@example.com",
+  "subject": "Lack of transparency in booking process",
+  "description": "I found the booking process to be confusing and unclear. There was a lack of transparency regarding the pricing and additional charges. Please ensure a more transparent and straightforward booking process.",
+  "closed": true,
+  "comment": "We are working on it"
+},
+{
+ 
+  "name": "Aditi Patel",
+  "contactNumber": "9876543210",
+  "emailId": "aditi.patel@example.com",
+  "subject": "Limited tour activities",
+  "description": "The tour activities offered were limited in variety and scope. It would be great to have more options and diverse activities to cater to different interests and preferences.",
+  "closed": false,
+  "comment": ""
+},
+{
+ 
+  "name": "Vihaan Singh",
+  "contactNumber": "9898989898",
+  "emailId": "vihaan.singh@example.com",
+  "subject": "Poor communication from tour guides",
+  "description": "The tour guides lacked effective communication skills. It was difficult to understand their explanations and instructions. Please ensure that the tour guides have good communication skills.",
+  "closed": true,
+  "comment": "Issue resolved"
+}]

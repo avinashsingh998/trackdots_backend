@@ -1,12 +1,8 @@
-// booking.js (model)
 const mongoose = require('mongoose')
 
 // Define the Booking schema
 const bookingSchema = new mongoose.Schema({
-  _id: {
-    type: mongoose.Schema.Types.ObjectId,
-    required: true
-  },
+  
   customer: {
     type: String,
     required: true
