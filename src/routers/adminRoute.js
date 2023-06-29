@@ -19,8 +19,7 @@ router.get('/bookings', verifyAdmin, getAllBookings)
 router.get('/feedback',verifyAdmin, getAllFeedbacks)
       .get('/feedbackUpdate', verifyAdmin, markAsRead)
 
-router.get('/tickets', verifyAdmin, getAllTickets)
-      .put('/tickets', verifyAdmin, updateTicket)
+router.route('/tickets').get(verifyAdmin, getAllTickets).put(verifyAdmin, updateTicket)
 
 
 

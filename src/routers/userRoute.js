@@ -5,6 +5,7 @@ const { addFeedback } = require('../controllers/feedback')
 const { addTicket } = require('../controllers/ticket')
 const { validateNewUser, addNewUser } = require('../controllers/user')
 const { loginUser, verifyUser } = require('../auth/userAuth')
+const { alreadyVerifiedUser } = require('../controllers/utility')
 
 const router = express.Router()
 
@@ -16,5 +17,6 @@ router.post('/feedback', addFeedback)
 router.post('/contact',verifyUser, addTicket)
 router.post('/newUser', validateNewUser).post('/verifyWithOTP', addNewUser )
 router.post('/login', loginUser)
+router.get("/verifyUser", verifyUser, alreadyVerifiedUser )
 
 module.exports = router
